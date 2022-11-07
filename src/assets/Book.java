@@ -1,5 +1,5 @@
 package assets;
 
-public class Libro {
+public class Book {
 }
 //pedir al usuario que introduzca lo que hemos creado en la clase
