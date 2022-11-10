@@ -8,7 +8,7 @@ public class Book {
     private String title;
     private String autor;
     private String genre;
-    private Integer PublicationDate;
+    private Integer publicationDate;
 
     /**
      * Metdos, funciones , comportamiento
@@ -43,9 +43,9 @@ public class Book {
         this.genre = genre;
     }
     public Integer getPublicationDate(){
-        return PublicationDate;
+        return publicationDate;
     }
     public void setPublicationDate(Integer publicationDate){
-        this.PublicationDate = publicationDate;
+        this.publicationDate = publicationDate;
     }
 }
