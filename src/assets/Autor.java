@@ -5,7 +5,7 @@ public class Autor {
 
     private String name;
     private String surname;
-    private Integer dayofbirth;
+    private String dayofbirth;
     private String birthplace;
 
 
@@ -21,10 +21,10 @@ public class Autor {
     public void setSurname(String surname){
         this.surname = surname;
     }
-    public Integer getDayofbirth(){
+    public String getDayofbirth(){
         return dayofbirth;
     }
-    public void setDayofbirth(Integer dayofbirth){
+    public void setDayofbirth(String dayofbirth){
         this.dayofbirth = dayofbirth;
     }
     public String getBirthplace(){

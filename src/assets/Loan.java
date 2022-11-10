@@ -4,8 +4,8 @@ public class Loan {
 
 private String book;
 private String user;
-private Integer loandate;
-private Integer returndate;
+private String loandate;
+private String returndate;
 
 public String getBook(){
     return book;
@@ -19,16 +19,16 @@ public String getUser(){
 public void setUser(String user){
     this.user = user;
 }
-public Integer getLoandate(){
+public String getLoandate(){
     return loandate;
 }
-public void setLoandate(Integer loandate){
+public void setLoandate(String loandate){
     this.loandate = loandate;
 }
-public Integer getReturndate(){
+public String getReturndate(){
     return returndate;
 }
-public void setReturndate(Integer returndate){
+public void setReturndate(String returndate){
     this.returndate = returndate;
 }
 }

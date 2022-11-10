@@ -8,7 +8,7 @@ public class Book {
     private String title;
     private String autor;
     private String genre;
-    private Integer publicationDate;
+    private String publicationDate;
 
     /**
      * Metdos, funciones , comportamiento
@@ -42,10 +42,10 @@ public class Book {
     public void setGenre(String genre){
         this.genre = genre;
     }
-    public Integer getPublicationDate(){
+    public String getPublicationDate(){
         return publicationDate;
     }
-    public void setPublicationDate(Integer publicationDate){
+    public void setPublicationDate(String publicationDate){
         this.publicationDate = publicationDate;
     }
 }
