@@ -110,6 +110,12 @@ public class Main {
         System.out.println("Introduce la localidad de un usuario");
         user.setLocality(use.nextLine());
 
+        System.out.println("El id introdsucido es " + user.getId());
+        System.out.println("El nombre introducido es " + user.getName());
+        System.out.println("El apellido del ususario introducido es " + user.getSurname());
+        System.out.println("El telefono del usuario introducido es "+ user.getPhone());
+        System.out.println("La direccion del usuario introducida es "+ user.getAdress());
+        System.out.println("La localidad del usuario introducido es "+ user.getLocality());
     }
     }
 
