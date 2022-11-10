@@ -1,11 +1,9 @@
 package assets;
 
-import java.sql.SQLSyntaxErrorException;
-import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
-    private static Scanner scanner;
+
 
     public static void main(String[] args) {
 
