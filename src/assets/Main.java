@@ -8,109 +8,110 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Scanner gen = new Scanner(System.in);
         Genre genre = new Genre();
 
-        System.out.print("Introduce el id de un genero");
-        genre.setId(gen.nextInt());
+        System.out.println("Introduce el id de un genero");
+        genre.setId(1);
 
-        System.out.print("Introduce el nombre de un genero");
-        genre.setName(gen.nextLine());
+        System.out.println("Introduce el nombre de un genero");
+        genre.setName("Fantasía");
 
         System.out.println("Introduce la descripcion del genero");
-        genre.setDescription(gen.nextLine());
+        genre.setDescription("Descripcion del Genero");
 
-        System.out.println("El id del genero introducifo es ");
-        System.out.println("EL nombre introducido es " + genre.getName());
-        System.out.println("La descripcion que se ha introducido es " + genre.getDescription());
+        System.out.println("El id introducido es "+ genre.getId());
+        System.out.println("El nombre introducido es " + genre.getName());
+        System.out.println("La descripción introducida es " + genre.getDescription());
 
         Autor autor = new Autor();
-        Scanner aut = new Scanner(System.in);
 
-        System.out.print("Introduce el nombre del actor");
-        autor.setName(aut.nextLine());
+        System.out.println("Introduce el nombre del actor");
+        autor.setName("Paco");
 
         System.out.println("Introduce un apellido del autor");
-        autor.setSurname(aut.nextLine());
+        autor.setSurname("Martinez");
 
         System.out.println("Introduce el lugar de nacimiento del autor");
-        autor.setBirthplace(aut.nextLine());
+        autor.setBirthplace("Madrid");
 
-        System.out.println("Introduce el dia de nacimiento del autor");
-        autor.setDayofbirth(aut.nextLine());
+        System.out.println("Introduce la fecha de nacimiento del autor");
+        autor.setDayofbirth("12 DE ABRIL DE 1976");
 
-        System.out.println("El nombre introducido del autor es " + autor.getName());
-        System.out.println("EL apellido introducido del autot es " + autor.getSurname());
-        System.out.println("El lugar de nacimiento introducido es "+ autor.getBirthplace());
-        System.out.println("El dia de nacimiento introducido es " + autor.getDayofbirth());
+        System.out.println("El nombre introduciodo es " + autor.getName());
+        System.out.println("El apellido introducido es "+ autor.getSurname());
+        System.out.println("El lugar introducido es "+ autor.getBirthplace());
+        System.out.println("La fecha introducida es "+autor.getDayofbirth());
+
 
         Loan loan = new Loan();
-        Scanner loa = new Scanner(System.in);
 
         System.out.println("Introduce el nombre del libro a prestar");
-        loan.setBook(loa.nextLine());
+        loan.setBook(loan.getBook());
 
         System.out.println("Introduce el usuario que toma prestado el libro");
-        loan.setUser(loa.nextLine());
+        loan.setUser(loan.getUser());
 
-        System.out.print("Introduce el dia en el que se presta el libro");
-        loan.setLoandate(loa.nextLine());
+        System.out.println("Introduce el dia en el que se presta el libro");
+        loan.setLoandate("3 de febrero de 2022");
 
-        System.out.print("Introduce que dia se devuelve el libro");
-        loan.setReturndate(loa.nextLine());
+        System.out.println("Introduce que dia se devuelve el libro");
+        loan.setReturndate("21 de febrero de 2022");
 
-        System.out.println("El nombre del libro a prestar introducido es " + loan.getBook());
-        System.out.println("El usuario que presta el libro introducido es "+ loan.getUser());
-        System.out.println("El dia introducido es "+ loan.getLoandate());
-        System.out.println("El dia que se devuelve el libro introducido es "+ loan.getReturndate());
+        System.out.println("El nombre del libro introducido es "+ loan.getBook());
+        System.out.println("El usuario introducido es "+ loan.getUser());
+        System.out.println("El dia que se pestó es "+ loan.getLoandate());
+        System.out.println("El dia que se devuelve es "+loan.getReturndate());
 
         Book book = new Book();
-        Scanner bok = new Scanner(System.in);
 
         System.out.println("Introduce el isbn de un libro");
-        book.setIsbn(bok.nextInt());
+        book.setIsbn("FE-47678348876");
 
 
         System.out.println("Introduce el titulo de un libro");
-        book.setTitle(bok.nextLine());
+        book.setTitle("Don Quijote");
 
         System.out.println("Introduce el genero de un libro");
-        book.setGenre(bok.nextLine());
+        book.setGenre(genre);
+
+        System.out.println("Introduce el autor del libro");
+        book.setAutor(autor);
 
         System.out.println("Introduce la fecha de publicacion de un libro");
-        book.setPublicationDate(bok.nextLine());
+        book.setPublicationDate("4 de agosto de 2008");
 
-        System.out.println("El isbn introducido es " + book.getIsbn());
-        System.out.println("El titulo del libro introducido es "+ book.getTitle());
-        System.out.println("EL genero introducido es " + book.getGenre());
+        System.out.println("El isbn introducido es "+ book.getIsbn());
+        System.out.println("El titulo introducido es "+ book.getTitle());
+        System.out.println("El genero introducido es "+ book.getGenre());
+        System.out.println("El autor introducido es "+ book.getAutor());
+        System.out.println("La fecha de publicacion es " + book.getPublicationDate());
 
         User user = new User();
-        Scanner use = new Scanner(System.in);
 
         System.out.println("Introduce el id de un usuario");
-        user.setId(use.nextInt());
+        user.setId(3);
 
         System.out.println("Introduce el nombre de un usuario");
-        user.setName(use.nextLine());
+        user.setName("Ines");
 
         System.out.println("Introduce el apellido de un usuario");
-        user.setSurname(use.nextLine());
+        user.setSurname("Suárez");
 
         System.out.println("Introduce el telefono de un usuario");
-        user.setPhone(use.nextInt());
+        user.setPhone("678328955");
 
         System.out.println("Introduce una direccion del usuario");
-        user.setAdress(use.nextLine());
+        user.setAdress("Calle lozano numero 8");
 
         System.out.println("Introduce la localidad de un usuario");
-        user.setLocality(use.nextLine());
+        user.setLocality("Avila");
 
-        System.out.println("El id introdsucido es " + user.getId());
-        System.out.println("El nombre introducido es " + user.getName());
-        System.out.println("El apellido del ususario introducido es " + user.getSurname());
-        System.out.println("El telefono del usuario introducido es "+ user.getPhone());
-        System.out.println("La direccion del usuario introducida es "+ user.getAdress());
-        System.out.println("La localidad del usuario introducido es "+ user.getLocality());
+        System.out.println("EL id introducido es "+user.getId());
+        System.out.println("El nombre de ususario introducido es " + user.getName());
+        System.out.println("El apellido introducido es " + user.getSurname());
+        System.out.println("El teléfono introducido es "+ user.getPhone());
+        System.out.println("La direccion introducida es "+ user.getAdress());
+        System.out.println("La localidad introducida es "+ user.getLocality());
     }
     }
 

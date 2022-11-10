@@ -6,7 +6,7 @@ public class User {
     private Integer id;
     private String name;
     private String surname;
-    private Integer phone;
+    private String phone;
     private String adress;
     private String locality;
 
@@ -30,10 +30,10 @@ public class User {
     public void setSurname(String surname){
         this.surname = surname;
     }
-    public Integer getPhone(){
+    public String getPhone(){
         return phone;
     }
-    public void setPhone(Integer phone){
+    public void setPhone(String phone){
         this.phone = phone;
     }
     public String getAdress(){

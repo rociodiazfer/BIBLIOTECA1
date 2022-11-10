@@ -2,21 +2,21 @@ package assets;
 
 public class Loan {
 
-private String book;
-private String user;
+private Book book;
+private User user   ;
 private String loandate;
 private String returndate;
 
-public String getBook(){
+public Book getBook(){
     return book;
 }
-public void setBook(String book){
+public void setBook(Book book){
     this.book = book;
 }
-public String getUser(){
+public User getUser(){
     return user;
 }
-public void setUser(String user){
+public void setUser(User user){
     this.user = user;
 }
 public String getLoandate(){
