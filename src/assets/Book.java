@@ -6,7 +6,6 @@ public class Book {
 
     private Integer isbn;
     private String title;
-    private String autor;
     private String genre;
     private String publicationDate;
 
@@ -27,13 +26,6 @@ public class Book {
 
     public void setTitle(String title){
         this.title = title;
-    }
-
-    public String getAutor(){
-        return autor;
-    }
-    public void setAutor(String autor){
-        this.autor = autor;
     }
 
     public  String getGenre(){

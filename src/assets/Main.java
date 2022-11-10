@@ -72,8 +72,6 @@ public class Main {
         System.out.println("Introduce el isbn de un libro");
         book.setIsbn(bok.nextInt());
 
-        System.out.println("Introduce el autor de un libro");
-        book.setAutor(bok.nextLine());
 
         System.out.println("Introduce el titulo de un libro");
         book.setTitle(bok.nextLine());
@@ -85,7 +83,6 @@ public class Main {
         book.setPublicationDate(bok.nextLine());
 
         System.out.println("El isbn introducido es " + book.getIsbn());
-        System.out.println("El autor introducido es "+ book.getAutor());
         System.out.println("El titulo del libro introducido es "+ book.getTitle());
         System.out.println("EL genero introducido es " + book.getGenre());
 
